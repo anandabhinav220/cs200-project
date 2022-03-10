@@ -1,0 +1,63 @@
+create database cs200_project;
+create table users(
+  id int NOT NULL AUTO_INCREMENT,
+  email varchar(255) NOT NULL,
+  pswd varchar(255),
+  PRIMARY KEY (id)
+);
+create table Epsilon(
+  id int NOT NULL AUTO_INCREMENT,
+  Components varchar(255) NOT NULL,
+  Total int,
+  Left int,
+  PRIMARY KEY (id)
+);
+create table Electromos(
+  id int NOT NULL AUTO_INCREMENT,
+  Components varchar(255) NOT NULL,
+  Total int,
+  Left int,
+  PRIMARY KEY (id)
+);
+create table gdsc(
+  id int NOT NULL AUTO_INCREMENT,
+  Components varchar(255) NOT NULL,
+  Total int,
+  Left int,
+  PRIMARY KEY (id)
+);
+create table Ingenuity(
+  id int NOT NULL AUTO_INCREMENT,
+  Components varchar(255) NOT NULL,
+  Total int,
+  Left int,
+  PRIMARY KEY (id)
+);
+create table Motorsports(
+  id int NOT NULL AUTO_INCREMENT,
+  Components varchar(255) NOT NULL,
+  Total int,
+  Left int,
+  PRIMARY KEY (id)
+);
+insert into
+  Epsilon(Components, Total, Left)
+values('Arduino', '1', '1');
+insert into
+  Epsilon(Components, Total, Left)
+values('Raspberry Pi', '1', '1');
+insert into
+  Epsilon(Components, Total, Left)
+values('Raspberry Pi Camera', '1', '1');
+insert into
+  Electromos(Components, Total, Left)
+values('Raspberry Pi Camera Module', '1', '1');
+insert into
+  Electromos(Components, Total, Left)
+values('Raspberry Pi Camera', '1', '1');
+insert into
+  Ingenuity(Components, Total, Left)
+values('Stylus Pen', '1', '1');
+insert into
+  Motorsports(Components, Total, Left)
+values('BLDC Motor', '1', '1');
